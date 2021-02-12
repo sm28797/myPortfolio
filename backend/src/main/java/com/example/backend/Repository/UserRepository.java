@@ -15,8 +15,9 @@ public class UserRepository {
 
 	public List<String> getAllUserNames() {
 		// TODO Auto-generated method stub
+		String query="select name from contact";
 		List<String> usernameList=new ArrayList<String>();
-		usernameList.addAll(jdbcTemplate.queryForList("select name from contact;",String.class));
+		usernameList.addAll(jdbcTemplate.queryForList(query,String.class));
 		return usernameList;
 	}
 
