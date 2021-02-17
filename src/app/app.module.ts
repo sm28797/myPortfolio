@@ -14,6 +14,8 @@ import { ServicesComponent } from './services/services.component';
 import { UiComponent } from './ui/ui.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserregistrationComponent } from './userregistration/userregistration.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     ServicesComponent,
     UiComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UserregistrationComponent,
+    UserloginComponent
   ],
   imports: [
     BrowserModule,

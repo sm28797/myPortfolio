@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+
+
+<section class="pt-5 text-center">
+  
+</section>
+
+<section class="mt-5">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6" >
+    		<img src="./assets/img/logo/login_image.png" style="width: 100%;">
+    </div>
+
+    <div  class="col-sm-6 px-5 py-4" style="box-shadow:' 10px 10px 10px 10px grey';">
+    	<h2>Welcome to Login Demo</h2>
+        <span style="color: red;">{{ ifNotFound }}</span>
+    
+    <form action="#" method="post" >
+
+        <div>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" [(ngModel)] ="log.username" name="username" required>
+            <span style="color: red;">{{ usernameError }}</span><br/>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" [(ngModel)] ="log.password" name="password" required>
+            <span style="color: red;">{{ passwordError }}</span><br/>
+            <button type="submit" (click)="login()">Login</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#" style="color: blue;">password ?</a></span>
+        </div>
+    </form>
+    </div>
+</div>
+</div>
+</section>

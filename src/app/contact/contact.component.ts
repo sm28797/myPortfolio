@@ -25,7 +25,6 @@ export class ContactComponent implements OnInit {
       .subscribe(
         response => this.handleSuccessfulResponse(response),
     );
-    console.log(this.userModel);
 
   }
   handleSuccessfulResponse(response){

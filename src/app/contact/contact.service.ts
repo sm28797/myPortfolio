@@ -18,7 +18,6 @@ export class User{
 
 
 export class ContactService {
-
   constructor(private httpClient:HttpClient) { }
   postData(user: User){
     return this.httpClient.post<any>('http://localhost:8080/contactdata',user);
